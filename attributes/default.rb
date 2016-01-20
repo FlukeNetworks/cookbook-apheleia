@@ -6,3 +6,4 @@ default['apheleia']['args'] = {
   zk: 'localhost:2181'
 }
 default['apheleia']['nerve']['restart_cmd'] = 'systemctl restart nerve'
+default['apheleia']['synapse']['restart_cmd'] = 'systemctl restart synapse'

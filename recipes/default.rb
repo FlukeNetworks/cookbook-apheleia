@@ -20,5 +20,5 @@ cron 'apheleia_configure_nerve' do
   user 'root'
   hour '*'
   minute '*'
-  environment APHELEIA_RESTART_NERVE_CMD: node['apheleia']['nerve']['restart_cmd']
+  environment APHELEIA_RESTART_NERVE_CMD: node['apheleia']['nerve']['restart_cmd'], APHELEIA_RESTART_SYNAPSE_CMD: node['apheleia']['synapse']['restart_cmd']
 end
